@@ -10,13 +10,13 @@
 
 <body>
 
-    <div class="class1">First Div</div>
-    <div class="class2">Second Div</div>
-    <div class="class3">Third Div</div>
+    <div class="class1">First Div</div> <br>
+    <div class="class2">Second Div</div> <br>
+    <div class="class3">Third Div</div> <br>
 
-    <div class="classes divs">Fourth Div</div>
-    <div class="classes divs">Five Div</div>
-    <div class="classes divs">Six Div</div>
+    <div class="classes divs">Fourth Div</div> <br>
+    <div class="classes divs">Five Div</div> <br>
+    <div class="classes divs">Six Div</div> <br>
 
     <div>
         <div id="id1">
@@ -30,17 +30,68 @@
     <p>Write Your Experience Here</p>
 </body>
 <script>
+    // ------------------
     let sel = document.querySelector(".class1");
     sel.innerText = "Sameer Varshney";
     // console.log(sel);
 
+
+    // ---------------------------
     let a = document.querySelector(".class2");
     a.innerText = "First of all, Thank you for giving me the opportunity to introduce myself. My Name is Sameer & i m' 21 Years Old From Uttar Pradesh. I am doing my graduation in BCA from Gagan College Of Mangement & Technology . My Goal is to get a good position in a reputed Company . My strength are i am quick learner and smart worker";
-    console.log(a);
+    // console.log(a);
 
+    // ----------------------------------------
     let elems = document.querySelector(".class3");
     elems.style.color = "red"
-    console.log(elems);
+        // console.log(elems);
+
+
+    // --------------------------------------------------
+
+    let div = document.getElementsByClassName("divs");
+    console.log(div[0]);
+    div[0].style.border = " 2px solid black";
+    div[1].style.border = " 2px solid black";
+    div[2].style.border = " 2px solid black";
+
+
+    // for (let i = 0; i < div.length; i++) {
+    //     div[i].style.color = "red";
+    // }
+
+
+    // ---------------------------------
+
+    let c = document.getElementById("id1");
+    c.append("Aircampus");
+
+    // --------------------------------------------
+    let d = document.getElementsByTagName("div");
+    console.log(d);
+    d.innerHTML = "<p> This is my firs assignment </p>";
+    // element.innerHTML = " <i> yes it is wokring </i>";
+    // console.log(d);
+
+    // --------------------------------------------------------
+
+    let e = document.querySelectorAll("div");
+    // console.log(e[8]);
+    e[8].innerHTML = "<p>This is my firs assignment</p>";
+
+    // -----------------------------------------------------------
+
+    let f = document.querySelectorAll("div");
+    f[9].innerHTML = " <b> <u> My Experience with AirCampus </b></u>";
+    f[9].style.fontSize = "32px";
+    f[9].style.color = "violet";
+
+    // ----------------------------------------------------
+
+    let g = document.querySelectorAll("p");
+    console.log(g);
+    g[1].innerText = "My experince is like very strange in aircampus , bcz sometime i get overwhelmed with joy and sometimes i become most depressed person .. When i learning the thing goes very good and having a test and interview pushing myself to show my best versio.  Overall , it's like a stairs sometimes i see my self down and sometimes Up & our teachers are so coperative with us . ";
+    console.log(g);
 </script>
 
 </html>
